@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Asap:400,700"
+    />
+  </head>
+  <body>
+    <header><h1>Rock Paper Scissors</h1></header>
+    <div class="score-board">
+      <div id="user-label" class="badge">user</div>
+      <div id="comp-label" class="badge">comp</div>
+      <span id="user-score">0</span>:<span id="comp-score">0</span>
+    </div>
+
+    <div class="result"><p>Make your move!</p></div>
+
+    <div class="column">
+      <div class="column" id="u1">
+        <h2>Player</h2>
+        <p id="userChoiceDisplay"></p>
+      </div>
+      <div class="column">
+        <div class="choices">
+          <div class="choice" id="r"><img src="images/rock.png" alt="" /></div>
+          <div class="choice" id="p"><img src="images/paper.png" alt="" /></div>
+          <div class="choice" id="s">
+            <img src="images/scissors.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="column">
+        <div class="choice" style="margin:31% 0%;">
+          <img src="images/rock.png" id="displayCompChoice" alt="Compchoice" />
+        </div>
+      </div>
+      <div class="column" id="u1">
+        <h2>CPU</h2>
+        <p id="compChoiceDisplay"></p>
+      </div>
+    </div>
+    <iframe
+      width="1"
+      height="1"
+      src="https://www.youtube.com/embed/iOEGnu2NgA4?autoplay=1"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
